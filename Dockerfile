@@ -40,8 +40,8 @@ RUN git clone https://github.com/google/crc32c \
         .. \
     && make all install
 
-ARG NETBOX_PATH
-COPY ${NETBOX_PATH}/requirements.txt requirements-container.txt /
+# ARG NETBOX_PATH
+# COPY ${NETBOX_PATH}/requirements.txt requirements-container.txt /
 RUN /opt/netbox/venv/bin/pip install \
       -r /requirements.txt \
       -r /requirements-container.txt

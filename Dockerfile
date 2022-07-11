@@ -1,4 +1,4 @@
-ARG FROM
+ARG FROM=netboxcommunity/netbox:v3.0.11
 FROM ${FROM} as builder
 
 RUN apk add --no-cache \
